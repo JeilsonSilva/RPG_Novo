@@ -6,3 +6,11 @@ C:\Users\jeils\Desktop\RPG_Novo\Jeilson\RPG\RPG\obj\Debug\RPG.csproj.SuggestedBi
 C:\Users\jeils\Desktop\RPG_Novo\Jeilson\RPG\RPG\obj\Debug\RPG.csproj.CoreCompileInputs.cache
 C:\Users\jeils\Desktop\RPG_Novo\Jeilson\RPG\RPG\obj\Debug\RPG.exe
 C:\Users\jeils\Desktop\RPG_Novo\Jeilson\RPG\RPG\obj\Debug\RPG.pdb
+C:\Users\Reposição1\Documents\GitHub\RPG_Novo\RPG\bin\Debug\RPG.exe.config
+C:\Users\Reposição1\Documents\GitHub\RPG_Novo\RPG\bin\Debug\RPG.exe
+C:\Users\Reposição1\Documents\GitHub\RPG_Novo\RPG\bin\Debug\RPG.pdb
+C:\Users\Reposição1\Documents\GitHub\RPG_Novo\RPG\obj\Debug\RPG.csproj.AssemblyReference.cache
+C:\Users\Reposição1\Documents\GitHub\RPG_Novo\RPG\obj\Debug\RPG.csproj.SuggestedBindingRedirects.cache
+C:\Users\Reposição1\Documents\GitHub\RPG_Novo\RPG\obj\Debug\RPG.csproj.CoreCompileInputs.cache
+C:\Users\Reposição1\Documents\GitHub\RPG_Novo\RPG\obj\Debug\RPG.exe
+C:\Users\Reposição1\Documents\GitHub\RPG_Novo\RPG\obj\Debug\RPG.pdb

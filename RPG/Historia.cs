@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
 namespace RPG
 {
@@ -25,7 +22,7 @@ namespace RPG
             Console.WriteLine();
 
 
-      
+
             Console.WriteLine("Escolha uma opção a seguir:");
             Console.WriteLine("[1]Iniciar\n[2]Opções\n[3]Sair");
             escolha = int.Parse(Console.ReadLine());
@@ -34,8 +31,8 @@ namespace RPG
             {
                 case 1:
 
-                    Console.WriteLine("Qual é o seu nome?");
-                    jogador = Console.ReadLine();
+                    //Console.WriteLine("Qual é o seu nome?");
+                    //jogador = Console.ReadLine();
                     Console.Clear();
                     texto();
 
@@ -63,7 +60,7 @@ namespace RPG
                     Console.ReadLine();
                     Console.Clear();
                     goto volta;
-                  
+
             }
 
 
@@ -71,37 +68,37 @@ namespace RPG
         }
 
 
-        private async Task texto()
+        private void texto()
         {
-            _ = pontos();
-            Console.WriteLine($"{jogador} você acorda em uma masmorra e tudo está meio escuro.Você sente um de seus pulsos " +
+            
+            Console.Write($"{jogador} você acorda em uma masmorra e tudo está meio escuro.Você sente um de seus pulsos " +
              "preso junto ao seu corpo e escuta fortes barulhos vindos do corredor. Seus olhos começam a pesar.");
+
+
+            pontos();
+            Console.WriteLine();
             Console.WriteLine();
 
-            Console.WriteLine("Você acorda no meio de uma sala quadrada e nela existem 4 portas," +
+                Console.WriteLine("Você acorda no meio de uma sala quadrada e nela existem 4 portas," +
                                     " uma em cada parede.Seus pulsos agora estão livres");
+            Console.WriteLine("Pressione enter");
             Console.ReadLine();
             Console.Clear();
             Jogo jog = new Jogo();
-           
+
 
         }
-        private async Task pontos()
+        private void  pontos()
         {
-            await Task.Delay(100);
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.Write("Carregando");
-            for (int i = 0; i <= 15; i++)
+            
+            for (int i = 0; i < 10; i++)
             {
-                Console.Write(".");
-                await Task.Delay(400);
-
+                Thread.Sleep(500);
+                Console.Write('.');
             }
 
-            Console.WriteLine(".");
-            Console.Write("Pressione Enter:");
-         
+                Console.WriteLine(".");
+  
 
         }
     }
