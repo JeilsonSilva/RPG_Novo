@@ -81,7 +81,7 @@ namespace RPG
 
                 Console.WriteLine("Você acorda no meio de uma sala quadrada e nela existem 4 portas," +
                                     " uma em cada parede.Seus pulsos agora estão livres");
-            Console.WriteLine("Pressione enter");
+            Console.WriteLine("Pressione enter para continuar");
             Console.ReadLine();
             Console.Clear();
             Jogo jog = new Jogo();

@@ -14,3 +14,11 @@ C:\Users\Reposição1\Documents\GitHub\RPG_Novo\RPG\obj\Debug\RPG.csproj.Suggest
 C:\Users\Reposição1\Documents\GitHub\RPG_Novo\RPG\obj\Debug\RPG.csproj.CoreCompileInputs.cache
 C:\Users\Reposição1\Documents\GitHub\RPG_Novo\RPG\obj\Debug\RPG.exe
 C:\Users\Reposição1\Documents\GitHub\RPG_Novo\RPG\obj\Debug\RPG.pdb
+C:\Users\Cliente\Desktop\RPG_Novo\RPG\bin\Debug\RPG.exe.config
+C:\Users\Cliente\Desktop\RPG_Novo\RPG\bin\Debug\RPG.exe
+C:\Users\Cliente\Desktop\RPG_Novo\RPG\bin\Debug\RPG.pdb
+C:\Users\Cliente\Desktop\RPG_Novo\RPG\obj\Debug\RPG.csproj.AssemblyReference.cache
+C:\Users\Cliente\Desktop\RPG_Novo\RPG\obj\Debug\RPG.csproj.SuggestedBindingRedirects.cache
+C:\Users\Cliente\Desktop\RPG_Novo\RPG\obj\Debug\RPG.csproj.CoreCompileInputs.cache
+C:\Users\Cliente\Desktop\RPG_Novo\RPG\obj\Debug\RPG.exe
+C:\Users\Cliente\Desktop\RPG_Novo\RPG\obj\Debug\RPG.pdb
