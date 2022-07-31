@@ -7,6 +7,9 @@ namespace RPG
         String posição = "Sala 1";
         int escolha;
         Mapa map = new Mapa();
+        Status st = new Status();
+        bool parada = false;
+
         public Jogo()
         {
 
@@ -20,6 +23,18 @@ namespace RPG
             Console.Clear();
             map.Mapa1();
         volta:
+            if (parada == false)
+            {
+                st.vida();
+                st.Energia();
+                parada = true;
+            }
+            else
+            {
+                st.vidaparada();
+                st.Energiaparada();
+            }
+            
             Console.WriteLine($"Você se encontra na {posição}");
             Console.WriteLine();
             Console.WriteLine("Para onde você deseja ir a seguir\n[1] Salão Principal\n[2] Sala 2\n[3] Sala 3" +
@@ -73,6 +88,8 @@ namespace RPG
             Console.Clear();
             posição = "Salão Principal";
             map.Mapa1();
+            st.vidaparada();
+            st.Energiaparada();
             Console.WriteLine($"Você está na(o) {posição}");
             Console.WriteLine("Para onde você deseja ir a seguir\n[1]Sala 1");
             escolha = int.Parse(Console.ReadLine());
@@ -86,6 +103,8 @@ namespace RPG
             Console.Clear();
             posição = "Sala 2";
             map.Mapa1();
+            st.vidaparada();
+            st.Energiaparada();
             Console.WriteLine($"Você está na(o) {posição}");
             Console.WriteLine("Para onde você deseja ir a seguir\n[1]Sala 1");
             escolha = int.Parse(Console.ReadLine());
@@ -99,6 +118,8 @@ namespace RPG
             Console.Clear();
             posição = "Sala 3";
             map.Mapa1();
+            st.vidaparada();
+            st.Energiaparada();
             Console.WriteLine($"Você está na(o) {posição}");
             Console.WriteLine("Para onde você deseja ir a seguir\n[1]Sala 1\n[2]Sala 4");
             escolha = int.Parse(Console.ReadLine());
@@ -113,6 +134,8 @@ namespace RPG
             Console.Clear();
             posição = "Sala 4";
             map.Mapa1();
+            st.vidaparada();
+            st.Energiaparada();
             Console.WriteLine($"Você está na(o) {posição}");
             Console.WriteLine("Para onde você deseja ir a seguir\n[1]Sala 1\n[2]Sala 3");
             escolha = int.Parse(Console.ReadLine());
@@ -127,6 +150,8 @@ namespace RPG
             Console.Clear();
             posição = "Escadas";
             map.Mapa1();
+            st.vidaparada();
+            st.Energiaparada();
             Console.WriteLine($"Você está na(o) {posição}");
             Console.WriteLine("Para onde você deseja ir a seguir\n[1]Sala 1\n[2]Segundo andar");
             escolha = int.Parse(Console.ReadLine());
@@ -141,6 +166,8 @@ namespace RPG
         volta:
             Console.Clear();
             map.Mapa2();
+            st.vidaparada();
+            st.Energiaparada();
             Console.WriteLine($"Você está na(o) {posição}");
             Console.WriteLine("Para onde você deseja ir a seguir\n[1]Escadas\n[2]Sala 5\n[3]Sala 6\n[4]Sala 7\n[5]Sala 8");
             escolha = int.Parse(Console.ReadLine());
@@ -201,6 +228,8 @@ namespace RPG
             Console.Clear();
             posição = "Sala 5";
             map.Mapa2();
+            st.vidaparada();
+            st.Energiaparada();
             Console.WriteLine($"Você está na(o) {posição}");
             Console.WriteLine("Para onde você deseja ir a seguir\n[1]Corredor");
             escolha = int.Parse(Console.ReadLine());
@@ -214,6 +243,8 @@ namespace RPG
             Console.Clear();
             posição = "Sala 6";
             map.Mapa2();
+            st.vidaparada();
+            st.Energiaparada();
             Console.WriteLine($"Você está na(o) {posição}");
             Console.WriteLine("Para onde você deseja ir a seguir\n[1]Corredor");
             escolha = int.Parse(Console.ReadLine());
@@ -227,6 +258,8 @@ namespace RPG
             Console.Clear();
             posição = "Sala 7";
             map.Mapa2();
+            st.vidaparada();
+            st.Energiaparada();
             Console.WriteLine($"Você está na(o) {posição}");
             Console.WriteLine("Para onde você deseja ir a seguir\n[1]Corredor");
             escolha = int.Parse(Console.ReadLine());
@@ -237,9 +270,12 @@ namespace RPG
         private void Sala8()
         {
         erro:
+            st.Menos_Vida = 60;
             Console.Clear();
             posição = "Sala 8";
             map.Mapa2();
+            st.vidaparada();
+            st.Energiaparada();
             Console.WriteLine($"Você está na(o) {posição}");
             Console.WriteLine("Para onde você deseja ir a seguir\n[1]Corredor");
             escolha = int.Parse(Console.ReadLine());

@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Threading;
 namespace RPG
 {
     internal class Program
@@ -10,6 +10,15 @@ namespace RPG
             Historia hist = new Historia();
             Console.WriteLine("Estou aqui");
             Console.ReadLine();
+
+            
+
+
+
+            Console.ReadLine();
+    
+
+          
         }
     }
 

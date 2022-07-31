@@ -31,8 +31,8 @@ namespace RPG
             {
                 case 1:
 
-                    //Console.WriteLine("Qual é o seu nome?");
-                    //jogador = Console.ReadLine();
+                    Console.WriteLine("Qual é o seu nome?");
+                    jogador = Console.ReadLine();
                     Console.Clear();
                     texto();
 
