@@ -8,6 +8,7 @@ namespace RPG
         int escolha;
         Mapa map = new Mapa();
         Status st = new Status();
+        Itens its = new Itens();
         bool parada = false;
 
         public Jogo()
@@ -20,9 +21,9 @@ namespace RPG
 
         private void Sala1()
         {
+        volta:
             Console.Clear();
             map.Mapa1();
-        volta:
             if (parada == false)
             {
                 st.vida();
@@ -91,9 +92,10 @@ namespace RPG
             st.vidaparada();
             st.Energiaparada();
             Console.WriteLine($"Você está na(o) {posição}");
-            Console.WriteLine("Para onde você deseja ir a seguir\n[1]Sala 1");
+            Console.WriteLine("Para onde você deseja ir a seguir\n[1]Sala 1\n[2]Procurar por itens");
             escolha = int.Parse(Console.ReadLine());
             if (escolha == 1) { Sala1(); }
+            if (escolha == 2) { its.AcharItens(); goto erro; }
             else { goto erro; }
         }
 
@@ -106,9 +108,10 @@ namespace RPG
             st.vidaparada();
             st.Energiaparada();
             Console.WriteLine($"Você está na(o) {posição}");
-            Console.WriteLine("Para onde você deseja ir a seguir\n[1]Sala 1");
+            Console.WriteLine("Para onde você deseja ir a seguir\n[1]Sala 1\n[2]Procurar por itens");
             escolha = int.Parse(Console.ReadLine());
             if (escolha == 1) { Sala1(); }
+            if (escolha == 2) { its.AcharItens(); Console.ReadLine();  goto erro; } 
             else { goto erro; }
         }
 
@@ -137,10 +140,11 @@ namespace RPG
             st.vidaparada();
             st.Energiaparada();
             Console.WriteLine($"Você está na(o) {posição}");
-            Console.WriteLine("Para onde você deseja ir a seguir\n[1]Sala 1\n[2]Sala 3");
+            Console.WriteLine("Para onde você deseja ir a seguir\n[1]Sala 1\n[2]Sala 3\n[3]Procurar por itens");
             escolha = int.Parse(Console.ReadLine());
             if (escolha == 1) { Sala1(); }
             if (escolha == 2) { Sala3(); }
+            if (escolha == 3) { its.AcharItens(); goto erro; }
             else { goto erro; }
         }
 
@@ -246,9 +250,10 @@ namespace RPG
             st.vidaparada();
             st.Energiaparada();
             Console.WriteLine($"Você está na(o) {posição}");
-            Console.WriteLine("Para onde você deseja ir a seguir\n[1]Corredor");
+            Console.WriteLine("Para onde você deseja ir a seguir\n[1]Corredor\n[2]Procurar por itens");
             escolha = int.Parse(Console.ReadLine());
             if (escolha == 1) { Segundo_Andar(); }
+            if (escolha == 2) { its.AcharItens(); goto erro; }
             else { goto erro; }
         }
 
@@ -261,9 +266,10 @@ namespace RPG
             st.vidaparada();
             st.Energiaparada();
             Console.WriteLine($"Você está na(o) {posição}");
-            Console.WriteLine("Para onde você deseja ir a seguir\n[1]Corredor");
+            Console.WriteLine("Para onde você deseja ir a seguir\n[1]Corredor\n[2]Procurar por itens");
             escolha = int.Parse(Console.ReadLine());
             if (escolha == 1) { Segundo_Andar(); }
+            if (escolha == 2) { its.AcharItens(); goto erro; }
             else { goto erro; }
         }
 
