@@ -9,16 +9,20 @@ namespace RPG
     internal class Itens
     {
         List<string> itens = new List<string>();
+        List<String> itens_jogador = new List<String>();
         Random rand = new Random();
+
         int showitem;
         int tamanhoLista;
+        bool listavazia = true;
 
         public Itens()
         {
-            int tamanhoLista = 4;
+            tamanhoLista = 5;
             itens.Add("Adaga");
             itens.Add("Poção de cura");
-            itens.Add("Algemas");
+            itens.Add("Poção de energia");
+            itens.Add("Par de algemas");
             itens.Add("Lamparina");
             itens.Add("Chave dourada");
 
@@ -27,38 +31,48 @@ namespace RPG
 
         public void AcharItens()
         {
-            
-            
 
-            showitem = rand.Next(0,11);
 
-            if(showitem > tamanhoLista )
+
+            showitem = rand.Next(0, 11);
+
+            if (showitem > tamanhoLista)
             {
-                Console.WriteLine("Não há itens na sala");
+                Console.WriteLine("Você não conseguiu encontrar nenhum item");
             }
 
             else
             {
-              
-                
-                    Console.WriteLine($"Você achou um(a){itens[showitem]}");
-                    itens.RemoveAt(showitem);
-                    if (tamanhoLista >= 1) { tamanhoLista--; }
-                    Console.WriteLine();
+                listavazia = false;
+                Console.WriteLine($"Você achou um(a){itens[showitem]}");
+                itens_jogador.Add(itens[showitem]);
+                itens.RemoveAt(showitem);
 
-                    foreach (var i in itens)
-                    {
-
-                        Console.WriteLine(i);
-                    }
-
-
-
-                 
-                
+                if (tamanhoLista >= 1) { tamanhoLista--; }// ajustar quando acabam os itens
+                Console.WriteLine();
             }
-            
 
+
+        }
+
+        public void ListarItens()
+        {
+            if(listavazia == true)
+            {
+                Console.WriteLine("Sua lista de itens se encontra vazia");
+            }
+
+            else
+            {
+                foreach (var i in itens_jogador)
+                {
+
+                    Console.WriteLine(i);
+
+                }
+            }
+
+            
         }
     }
 }

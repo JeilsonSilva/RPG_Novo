@@ -30,3 +30,11 @@ C:\Users\Aluno\Documents\GitHub\RPG_Novo\RPG\obj\Debug\RPG.csproj.SuggestedBindi
 C:\Users\Aluno\Documents\GitHub\RPG_Novo\RPG\obj\Debug\RPG.csproj.CoreCompileInputs.cache
 C:\Users\Aluno\Documents\GitHub\RPG_Novo\RPG\obj\Debug\RPG.exe
 C:\Users\Aluno\Documents\GitHub\RPG_Novo\RPG\obj\Debug\RPG.pdb
+C:\Users\Aluno\Desktop\RPG_Novo\RPG\bin\Debug\RPG.exe.config
+C:\Users\Aluno\Desktop\RPG_Novo\RPG\bin\Debug\RPG.exe
+C:\Users\Aluno\Desktop\RPG_Novo\RPG\bin\Debug\RPG.pdb
+C:\Users\Aluno\Desktop\RPG_Novo\RPG\obj\Debug\RPG.csproj.AssemblyReference.cache
+C:\Users\Aluno\Desktop\RPG_Novo\RPG\obj\Debug\RPG.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aluno\Desktop\RPG_Novo\RPG\obj\Debug\RPG.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Desktop\RPG_Novo\RPG\obj\Debug\RPG.exe
+C:\Users\Aluno\Desktop\RPG_Novo\RPG\obj\Debug\RPG.pdb
