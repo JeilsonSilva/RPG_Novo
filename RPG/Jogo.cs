@@ -148,18 +148,19 @@ namespace RPG
                 escolha = int.Parse(Console.ReadLine());
 
                 if (escolha == 1) { procurar = false; Sala1(); }
-                if (escolha == 2) { procurar = true; its.AcharItens(); Console.ReadLine(); goto erro; }
+                if (escolha == 2) { /*procurar = true;*/ its.AcharItens(); Console.ReadLine(); goto erro; }
                 if (escolha == 3) { its.ListarItens(); Console.ReadLine(); goto erro; }
 
                 else { goto erro; }
             }
 
-            else if (procurar == true)
+            /*else if (procurar == true)
             {
                 Console.Clear();
                 posição = "Sala 2";
                 map.Mapa1();
                 st.vidaparada();
+
                 st.Energiaparada();
                 Console.WriteLine($"Você está na(o) {posição}");
                 Console.WriteLine();
@@ -170,7 +171,8 @@ namespace RPG
                 if (escolha == 2) { its.ListarItens(); Console.ReadLine(); goto erro; }
 
                 else { goto erro; }
-            }
+
+            }*/
         }
 
         private void Sala3()

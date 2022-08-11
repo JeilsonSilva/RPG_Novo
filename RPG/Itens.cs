@@ -14,11 +14,14 @@ namespace RPG
 
         int showitem;
         int tamanhoLista;
+        int tamanhoLista_jogador = 0;
+
         bool listavazia = true;
+        //bool NoItens = false;
 
         public Itens()
         {
-            tamanhoLista = 5;
+            tamanhoLista = 6;
             itens.Add("Adaga");
             itens.Add("Poção de cura");
             itens.Add("Poção de energia");
@@ -36,22 +39,34 @@ namespace RPG
 
             showitem = rand.Next(0, 11);
 
-            if (showitem > tamanhoLista)
-            {
-                Console.WriteLine("Você não conseguiu encontrar nenhum item");
+            if (tamanhoLista_jogador == 6) 
+            { 
+                Console.WriteLine("Não existem mais itens na masmorra");
+                Console.WriteLine();
             }
 
             else
             {
-                listavazia = false;
-                Console.WriteLine($"Você achou um(a){itens[showitem]}");
-                itens_jogador.Add(itens[showitem]);
-                itens.RemoveAt(showitem);
 
-                if (tamanhoLista >= 1) { tamanhoLista--; }// ajustar quando acabam os itens
-                Console.WriteLine();
+                if (showitem >= tamanhoLista)
+                {
+                    Console.WriteLine("Você não conseguiu encontrar nenhum item");
+                }
+
+                else
+                {
+                    listavazia = false;
+
+                    Console.WriteLine($"Você achou um(a){itens[showitem]}");
+                    itens_jogador.Add(itens[showitem]);
+                    tamanhoLista_jogador++;
+                    itens.RemoveAt(showitem);
+
+                    if (tamanhoLista >= 1) { tamanhoLista--; }
+
+                    
+                }
             }
-
 
         }
 
@@ -74,5 +89,7 @@ namespace RPG
 
             
         }
+
+
     }
 }
