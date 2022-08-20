@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Combate.cs" />
     <Compile Include="Historia.cs" />
+    <Compile Include="Inimigos.cs" />
     <Compile Include="Itens.cs" />
     <Compile Include="Jogo.cs" />
     <Compile Include="Mapa.cs" />

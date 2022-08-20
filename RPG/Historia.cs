@@ -14,6 +14,8 @@ namespace RPG
 
         public Historia()
         {
+
+            Console.WriteLine("novamente");
         volta:
             Console.WriteLine("===============================");
             Console.WriteLine("=========Bem vindo ao==========");
@@ -31,9 +33,11 @@ namespace RPG
             {
                 case 1:
 
-                    Console.WriteLine("Qual é o seu nome?");
-                    jogador = Console.ReadLine();
+                    //Console.WriteLine("Qual é o seu nome?");
+                    //jogador = Console.ReadLine();
+                    
                     Console.Clear();
+                    Console.WriteLine("aaaaaaaaa");
                     texto();
 
                     break;
@@ -73,9 +77,9 @@ namespace RPG
             
             Console.Write($"{jogador} você acorda em uma masmorra e tudo está meio escuro.Você sente um de seus pulsos " +
              "preso junto ao seu corpo e escuta fortes barulhos vindos do corredor. Seus olhos começam a pesar.");
+            //Texto_Dinamico();
 
-
-            pontos();
+            pontos(10);
             Console.WriteLine();
             Console.WriteLine();
 
@@ -88,10 +92,22 @@ namespace RPG
 
 
         }
-        private void  pontos()
+
+        private void Texto_Dinamico()
+        {
+            string text = "{jogador} você acorda em uma masmorra e tudo está meio escuro.Você sente um de seus pulsos preso junto ao seu corpo e escuta fortes barulhos vindos do corredor. Seus olhos começam a pesar.";
+
+            foreach(var i in text)
+            {
+                Console.Write(i);
+                Thread.Sleep(2);
+            }
+        }
+
+        private void  pontos(int numpontos)
         {
             
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < numpontos; i++)
             {
                 Thread.Sleep(500);
                 Console.Write('.');

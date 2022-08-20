@@ -1,0 +1,8 @@
+C:\Users\infin\OneDrive\Área de Trabalho\RPG_Novo\RPG\bin\Release\RPG.exe.config
+C:\Users\infin\OneDrive\Área de Trabalho\RPG_Novo\RPG\bin\Release\RPG.exe
+C:\Users\infin\OneDrive\Área de Trabalho\RPG_Novo\RPG\bin\Release\RPG.pdb
+C:\Users\infin\OneDrive\Área de Trabalho\RPG_Novo\RPG\obj\Release\RPG.csproj.AssemblyReference.cache
+C:\Users\infin\OneDrive\Área de Trabalho\RPG_Novo\RPG\obj\Release\RPG.csproj.SuggestedBindingRedirects.cache
+C:\Users\infin\OneDrive\Área de Trabalho\RPG_Novo\RPG\obj\Release\RPG.csproj.CoreCompileInputs.cache
+C:\Users\infin\OneDrive\Área de Trabalho\RPG_Novo\RPG\obj\Release\RPG.exe
+C:\Users\infin\OneDrive\Área de Trabalho\RPG_Novo\RPG\obj\Release\RPG.pdb

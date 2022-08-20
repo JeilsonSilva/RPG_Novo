@@ -8,15 +8,17 @@ namespace RPG
         Status st = new Status();
         Itens its = new Itens();
         Random rand = new Random();
+        //Combate comb = new Combate();   
+        
 
-        String posição = "Sala 1";
+        public String posição = "Sala 1";
         int escolha;       
         bool parada = false;
         bool procurar = false;
 
         public Jogo()
         {
-
+            Console.WriteLine("mds");
 
             Sala1();
 
@@ -148,13 +150,13 @@ namespace RPG
                 escolha = int.Parse(Console.ReadLine());
 
                 if (escolha == 1) { procurar = false; Sala1(); }
-                if (escolha == 2) { /*procurar = true;*/ its.AcharItens(); Console.ReadLine(); goto erro; }
+                if (escolha == 2) { procurar = true; its.AcharItens(); Console.ReadLine(); goto erro; }
                 if (escolha == 3) { its.ListarItens(); Console.ReadLine(); goto erro; }
 
                 else { goto erro; }
             }
 
-            /*else if (procurar == true)
+            else if (procurar == true)
             {
                 Console.Clear();
                 posição = "Sala 2";
@@ -172,7 +174,7 @@ namespace RPG
 
                 else { goto erro; }
 
-            }*/
+            }
         }
 
         private void Sala3()
@@ -250,6 +252,7 @@ namespace RPG
             Console.WriteLine();
             Console.WriteLine("Para onde você deseja ir a seguir\n[1]Sala 1\n[2]Segundo andar");
             escolha = int.Parse(Console.ReadLine());
+            
 
             if (escolha == 1) { Sala1(); }
             if (escolha == 2) { Segundo_Andar(); }
