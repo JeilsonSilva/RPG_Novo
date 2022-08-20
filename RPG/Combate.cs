@@ -10,25 +10,26 @@ namespace RPG
 
         Random rand = new Random();
         Inimigos inim = new Inimigos();
-        Jogo jog = new Jogo();
+        
 
     
-        public void Batalha()
+        public void Batalha(string posi)
         {
-            Console.WriteLine("passou");
-            Console.WriteLine(jog.posição);
+            
+            
             Console.ReadLine();
 
-            /*switch (jog.posição)
+            switch (posi)
             { 
                 case "Escadas":
+
                     inim.Esqueleto();
                     Console.ReadLine();
-                    Console.WriteLine("passou");
+                    
                     break;
             
             }
-            */
+            
 
         }
     }

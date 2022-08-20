@@ -8,7 +8,7 @@ namespace RPG
         Status st = new Status();
         Itens its = new Itens();
         Random rand = new Random();
-        //Combate comb = new Combate();   
+        Combate comb = new Combate();   
         
 
         public String posição = "Sala 1";
@@ -18,8 +18,7 @@ namespace RPG
 
         public Jogo()
         {
-            Console.WriteLine("mds");
-
+          
             Sala1();
 
         }
@@ -103,8 +102,6 @@ namespace RPG
                 Console.WriteLine($"Você está na(o) {posição}");
                 Console.WriteLine();
                 Console.WriteLine("Para onde você deseja ir a seguir\n[1]Sala 1\n[2]Procurar por itens\n[3]Listar itens");
-                escolha = int.Parse(Console.ReadLine());
-
                 if (escolha == 1) { procurar = false; Sala1(); }
                 if (escolha == 2) { procurar = true; its.AcharItens(); Console.ReadLine(); goto erro; }
                 if (escolha == 3) { its.ListarItens(); Console.ReadLine(); goto erro; }
@@ -251,6 +248,7 @@ namespace RPG
             Console.WriteLine($"Você está na(o) {posição}");
             Console.WriteLine();
             Console.WriteLine("Para onde você deseja ir a seguir\n[1]Sala 1\n[2]Segundo andar");
+            comb.Batalha(posição);
             escolha = int.Parse(Console.ReadLine());
             
 

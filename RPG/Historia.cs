@@ -15,7 +15,7 @@ namespace RPG
         public Historia()
         {
 
-            Console.WriteLine("novamente");
+            
         volta:
             Console.WriteLine("===============================");
             Console.WriteLine("=========Bem vindo ao==========");
@@ -37,7 +37,6 @@ namespace RPG
                     //jogador = Console.ReadLine();
                     
                     Console.Clear();
-                    Console.WriteLine("aaaaaaaaa");
                     texto();
 
                     break;
@@ -74,18 +73,19 @@ namespace RPG
 
         private void texto()
         {
-            
-            Console.Write($"{jogador} você acorda em uma masmorra e tudo está meio escuro.Você sente um de seus pulsos " +
-             "preso junto ao seu corpo e escuta fortes barulhos vindos do corredor. Seus olhos começam a pesar.");
-            //Texto_Dinamico();
+
+            //Console.Write($"{jogador} você acorda em uma masmorra e tudo está meio escuro.Você sente um de seus pulsos " +
+            // "preso junto ao seu corpo e escuta fortes barulhos vindos do corredor. Seus olhos começam a pesar.");
+            Console.Write(jogador);
+            Texto_Dinamico();
 
             pontos(10);
             Console.WriteLine();
             Console.WriteLine();
 
-                Console.WriteLine("Você acorda no meio de uma sala quadrada e nela existem 4 portas," +
-                                    " uma em cada parede.Seus pulsos agora estão livres");
-            Console.WriteLine("Pressione enter para continuar");
+            //Console.WriteLine("Você acorda no meio de uma sala quadrada e nela existem 4 portas, uma em cada parede.Seus pulsos agora estão livres");
+            //Console.WriteLine("Pressione enter para continuar");
+            Texto_Dinamico1();
             Console.ReadLine();
             Console.Clear();
             Jogo jog = new Jogo();
@@ -95,13 +95,32 @@ namespace RPG
 
         private void Texto_Dinamico()
         {
-            string text = "{jogador} você acorda em uma masmorra e tudo está meio escuro.Você sente um de seus pulsos preso junto ao seu corpo e escuta fortes barulhos vindos do corredor. Seus olhos começam a pesar.";
+            string text = " você acorda em uma masmorra e tudo está meio escuro.Você sente um de seus pulsos preso junto ao seu corpo e escuta fortes barulhos vindos do corredor. Seus olhos começam a pesar.";
 
             foreach(var i in text)
             {
                 Console.Write(i);
                 Thread.Sleep(2);
             }
+        }
+        private void Texto_Dinamico1()
+        {
+            string text = "Você acorda no meio de uma sala quadrada e nela existem 4 portas, uma em cada parede.Seus pulsos agora estão livres";
+            string text1 = "Pressione enter para continuar";
+            foreach (var i in text)
+            {
+                Console.Write(i);
+                Thread.Sleep(2);
+            }
+
+            Console.WriteLine();
+
+            foreach (var i in text1)
+            {
+                Console.Write(i);
+                Thread.Sleep(2);
+            }
+
         }
 
         private void  pontos(int numpontos)

@@ -6,10 +6,7 @@ namespace RPG
     {
         static void Main(string[] args)
         {
-            //Mapa map = new Mapa();
-
-
-            Console.WriteLine("estoy aqui");
+            
 
             Historia hist = new Historia();
             

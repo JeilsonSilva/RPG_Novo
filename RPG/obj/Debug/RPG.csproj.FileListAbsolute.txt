@@ -54,3 +54,11 @@ C:\Users\infin\OneDrive\Área de Trabalho\RPG_Novo\RPG\obj\Debug\RPG.csproj.Sugg
 C:\Users\infin\OneDrive\Área de Trabalho\RPG_Novo\RPG\obj\Debug\RPG.csproj.CoreCompileInputs.cache
 C:\Users\infin\OneDrive\Área de Trabalho\RPG_Novo\RPG\obj\Debug\RPG.exe
 C:\Users\infin\OneDrive\Área de Trabalho\RPG_Novo\RPG\obj\Debug\RPG.pdb
+C:\Users\marco\OneDrive\Área de Trabalho\RPG_Novo\RPG\bin\Debug\RPG.exe.config
+C:\Users\marco\OneDrive\Área de Trabalho\RPG_Novo\RPG\bin\Debug\RPG.exe
+C:\Users\marco\OneDrive\Área de Trabalho\RPG_Novo\RPG\bin\Debug\RPG.pdb
+C:\Users\marco\OneDrive\Área de Trabalho\RPG_Novo\RPG\obj\Debug\RPG.csproj.AssemblyReference.cache
+C:\Users\marco\OneDrive\Área de Trabalho\RPG_Novo\RPG\obj\Debug\RPG.csproj.SuggestedBindingRedirects.cache
+C:\Users\marco\OneDrive\Área de Trabalho\RPG_Novo\RPG\obj\Debug\RPG.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\Área de Trabalho\RPG_Novo\RPG\obj\Debug\RPG.exe
+C:\Users\marco\OneDrive\Área de Trabalho\RPG_Novo\RPG\obj\Debug\RPG.pdb
